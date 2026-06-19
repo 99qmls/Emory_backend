@@ -1,0 +1,974 @@
+2026-05-12 09:47:06 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 09:47:19 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 404: Not Found  路径: /favicon.ico
+2026-05-12 16:59:52 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 404: Not Found  路径: /api/auth/register
+2026-05-12 17:05:03 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: type object 'User' has no attribute 'is_deleted'
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 50, in register
+    if await user_crud.get_by_email(db, email=req.email):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\crud\crud_user.py", line 15, in get_by_email
+    stmt = select(User).where(User.email == email, User.is_deleted == False)
+                                                   ^^^^^^^^^^^^^^^
+AttributeError: type object 'User' has no attribute 'is_deleted'
+
+2026-05-12 17:16:09 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:16:39 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:18:44 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:20:24 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: type object 'Tenant' has no attribute 'is_deleted'
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 55, in register
+    tenant = await tenant_crud.get(db, id=req.tenant_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\crud\base.py", line 22, in get
+    select(self.model).where(self.model.id == id, self.model.is_deleted == False)
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Tenant' has no attribute 'is_deleted'
+
+2026-05-12 17:26:35 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:29:00 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:29:51 | ERROR    | app.core.exceptions:sqlalchemy_exception_handler:65 - 数据库异常: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $1: '001' (invalid UUID '001': length must be between 32..36 characters, got 3)
+[SQL: SELECT tenants.id, tenants.name, tenants.status, tenants.plan, tenants.created_at, tenants.updated_at 
+FROM tenants 
+WHERE tenants.id = $1::UUID]
+[parameters: ('001',)]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+Traceback (most recent call last):
+  File "asyncpg\\protocol\\prepared_stmt.pyx", line 175, in asyncpg.protocol.protocol.PreparedStatementState._encode_bind_msg
+  File "asyncpg\\protocol\\codecs/base.pyx", line 227, in asyncpg.protocol.protocol.Codec.encode
+  File "asyncpg\\protocol\\codecs/base.pyx", line 129, in asyncpg.protocol.protocol.Codec.encode_scalar
+  File "asyncpg\\pgproto\\./codecs/uuid.pyx", line 16, in asyncpg.pgproto.pgproto.uuid_encode
+  File "asyncpg\\pgproto\\./uuid.pyx", line 88, in asyncpg.pgproto.pgproto.pg_uuid_bytes_from_str
+ValueError: invalid UUID '001': length must be between 32..36 characters, got 3
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 545, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\asyncpg\prepared_stmt.py", line 176, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\asyncpg\prepared_stmt.py", line 267, in __bind_execute
+    data, status, _ = await self.__do_execute(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\asyncpg\prepared_stmt.py", line 256, in __do_execute
+    return await executor(protocol)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\\protocol\\protocol.pyx", line 185, in bind_execute
+  File "asyncpg\\protocol\\prepared_stmt.pyx", line 204, in asyncpg.protocol.protocol.PreparedStatementState._encode_bind_msg
+asyncpg.exceptions.DataError: invalid input for query argument $1: '001' (invalid UUID '001': length must be between 32..36 characters, got 3)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.Error: <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $1: '001' (invalid UUID '001': length must be between 32..36 characters, got 3)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 55, in register
+    tenant = await tenant_crud.get(db, id=req.tenant_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\crud\base.py", line 21, in get
+    result = await db.execute(
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 463, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.DBAPIError: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $1: '001' (invalid UUID '001': length must be between 32..36 characters, got 3)
+[SQL: SELECT tenants.id, tenants.name, tenants.status, tenants.plan, tenants.created_at, tenants.updated_at 
+FROM tenants 
+WHERE tenants.id = $1::UUID]
+[parameters: ('001',)]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+
+2026-05-12 17:31:29 | ERROR    | app.core.exceptions:sqlalchemy_exception_handler:65 - 数据库异常: SQL expression for WHERE/HAVING role expected, got <class 'app.models.tenant.Tenant'>.
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 60, in register
+    tenant = await tenant_crud.get_by_name(db, name=req.tenant_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\crud\crud_tenant.py", line 13, in get_by_name
+    stmt = select(Tenant).where(Tenant.name == name, Tenant)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in where
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\base.py", line 280, in _generative
+    x = fn(self, *args, **kw)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\selectable.py", line 6190, in where
+    where_criteria: ColumnElement[Any] = coercions.expect(
+                                         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\coercions.py", line 395, in expect
+    resolved = impl._literal_coercion(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\coercions.py", line 634, in _literal_coercion
+    self._raise_for_expected(element, argname)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\coercions.py", line 518, in _raise_for_expected
+    raise exc.ArgumentError(msg, code=code) from err
+sqlalchemy.exc.ArgumentError: SQL expression for WHERE/HAVING role expected, got <class 'app.models.tenant.Tenant'>.
+
+2026-05-12 17:32:30 | ERROR    | app.core.exceptions:sqlalchemy_exception_handler:65 - 数据库异常: SQL expression for WHERE/HAVING role expected, got <class 'app.models.tenant.Tenant'>.
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 60, in register
+    tenant = await tenant_crud.get_by_name(db, name=req.tenant_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\crud\crud_tenant.py", line 13, in get_by_name
+    stmt = select(Tenant).where(Tenant.name == name, Tenant)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in where
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\base.py", line 280, in _generative
+    x = fn(self, *args, **kw)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\selectable.py", line 6190, in where
+    where_criteria: ColumnElement[Any] = coercions.expect(
+                                         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\coercions.py", line 395, in expect
+    resolved = impl._literal_coercion(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\coercions.py", line 634, in _literal_coercion
+    self._raise_for_expected(element, argname)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\coercions.py", line 518, in _raise_for_expected
+    raise exc.ArgumentError(msg, code=code) from err
+sqlalchemy.exc.ArgumentError: SQL expression for WHERE/HAVING role expected, got <class 'app.models.tenant.Tenant'>.
+
+2026-05-12 17:35:13 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:35:48 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:36:18 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 'description' is an invalid keyword argument for Tenant
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 63, in register
+    tenant = await tenant_crud.create(db, obj_in=TenantCreate(name=req.tenant_name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\crud\base.py", line 63, in create
+    db_obj = self.model(**obj_in_data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\state.py", line 571, in _initialize_instance
+    with util.safe_reraise():
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\state.py", line 569, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 2175, in _declarative_constructor
+    raise TypeError(
+TypeError: 'description' is an invalid keyword argument for Tenant
+
+2026-05-12 17:40:51 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:41:22 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:41:55 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:43:53 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:44:21 | ERROR    | app.core.exceptions:sqlalchemy_exception_handler:65 - 数据库异常: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.CheckViolationError'>: new row for relation "tenants" violates check constraint "tenants_plan_check"
+DETAIL:  Failing row contains (8ef89115-fc5a-4992-bb80-1dfbfa304e7e, moli, active, basic, 2026-05-12 01:44:21.646209+00, 2026-05-12 01:44:21.646209+00, null).
+[SQL: INSERT INTO tenants (name, status, plan, created_at, updated_at, description) VALUES ($1::VARCHAR, $2::VARCHAR, $3::VARCHAR, $4::TIMESTAMP WITH TIME ZONE, $5::TIMESTAMP WITH TIME ZONE, $6::VARCHAR) RETURNING tenants.id]
+[parameters: ('moli', 'active', 'basic', datetime.datetime(2026, 5, 12, 9, 44, 21, 646209), datetime.datetime(2026, 5, 12, 9, 44, 21, 646209), None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 545, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\asyncpg\prepared_stmt.py", line 176, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\asyncpg\prepared_stmt.py", line 267, in __bind_execute
+    data, status, _ = await self.__do_execute(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\asyncpg\prepared_stmt.py", line 256, in __do_execute
+    return await executor(protocol)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\\protocol\\protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.CheckViolationError: new row for relation "tenants" violates check constraint "tenants_plan_check"
+DETAIL:  Failing row contains (8ef89115-fc5a-4992-bb80-1dfbfa304e7e, moli, active, basic, 2026-05-12 01:44:21.646209+00, 2026-05-12 01:44:21.646209+00, null).
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.IntegrityError: <class 'asyncpg.exceptions.CheckViolationError'>: new row for relation "tenants" violates check constraint "tenants_plan_check"
+DETAIL:  Failing row contains (8ef89115-fc5a-4992-bb80-1dfbfa304e7e, moli, active, basic, 2026-05-12 01:44:21.646209+00, 2026-05-12 01:44:21.646209+00, null).
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 63, in register
+    tenant = await tenant_crud.create(db, obj_in=TenantCreate(name=req.tenant_name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\crud\base.py", line 65, in create
+    await db.commit()
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1011, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\engine\default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.IntegrityError: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.CheckViolationError'>: new row for relation "tenants" violates check constraint "tenants_plan_check"
+DETAIL:  Failing row contains (8ef89115-fc5a-4992-bb80-1dfbfa304e7e, moli, active, basic, 2026-05-12 01:44:21.646209+00, 2026-05-12 01:44:21.646209+00, null).
+[SQL: INSERT INTO tenants (name, status, plan, created_at, updated_at, description) VALUES ($1::VARCHAR, $2::VARCHAR, $3::VARCHAR, $4::TIMESTAMP WITH TIME ZONE, $5::TIMESTAMP WITH TIME ZONE, $6::VARCHAR) RETURNING tenants.id]
+[parameters: ('moli', 'active', 'basic', datetime.datetime(2026, 5, 12, 9, 44, 21, 646209), datetime.datetime(2026, 5, 12, 9, 44, 21, 646209), None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2026-05-12 17:46:12 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:46:52 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:47:18 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 'dict' object has no attribute 'dict'
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 70, in register
+    user = await user_crud.create(db, obj_in=user_in)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\crud\crud_user.py", line 29, in create
+    **obj_in.dict(exclude={"password"}),
+      ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'dict'
+
+2026-05-12 17:50:26 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 'dict' object has no attribute 'dict'
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 70, in register
+    user_in_data = req.user_create_dict()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\crud\crud_user.py", line 29, in create
+    **obj_in.dict(exclude={"password"}),
+      ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'dict'
+
+2026-05-12 17:50:59 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:51:24 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 'full_name' is an invalid keyword argument for User
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 73, in register
+    user = await user_crud.create(db, obj_in=user_in)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\crud\crud_user.py", line 28, in create
+    db_obj = User(
+             ^^^^^
+  File "<string>", line 4, in __init__
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\state.py", line 571, in _initialize_instance
+    with util.safe_reraise():
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\state.py", line 569, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 2175, in _declarative_constructor
+    raise TypeError(
+TypeError: 'full_name' is an invalid keyword argument for User
+
+2026-05-12 17:55:22 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:56:00 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 17:56:26 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 4 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'id'), 'msg': 'Input should be a valid string', 'input': UUID('fc182334-41f7-4ca8-b046-f6ca1afa548e')}
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': UUID('76ff760b-fc35-459a-b508-d9b2a9d9dac7')}
+  {'type': 'string_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 1, 56, 26, 411801, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 1, 56, 26, 411801, tzinfo=datetime.timezone.utc)}
+
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 44, in register
+    POST /api/v1/auth/register
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 695, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 300, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 4 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'id'), 'msg': 'Input should be a valid string', 'input': UUID('fc182334-41f7-4ca8-b046-f6ca1afa548e')}
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': UUID('76ff760b-fc35-459a-b508-d9b2a9d9dac7')}
+  {'type': 'string_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 1, 56, 26, 411801, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 1, 56, 26, 411801, tzinfo=datetime.timezone.utc)}
+
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 44, in register
+    POST /api/v1/auth/register
+
+2026-05-12 17:59:33 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 400: 邮箱已注册  路径: /api/v1/auth/register
+2026-05-12 18:00:05 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:00:31 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 400: 邮箱已注册  路径: /api/v1/auth/register
+2026-05-12 18:01:04 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 4 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'id'), 'msg': 'Input should be a valid string', 'input': UUID('278bc7d0-ed08-42f8-81be-be528d3ddebd')}
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': UUID('76ff760b-fc35-459a-b508-d9b2a9d9dac7')}
+  {'type': 'string_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 2, 1, 4, 687897, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 2, 1, 4, 687897, tzinfo=datetime.timezone.utc)}
+
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 44, in register
+    POST /api/v1/auth/register
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 695, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 300, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 4 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'id'), 'msg': 'Input should be a valid string', 'input': UUID('278bc7d0-ed08-42f8-81be-be528d3ddebd')}
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': UUID('76ff760b-fc35-459a-b508-d9b2a9d9dac7')}
+  {'type': 'string_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 2, 1, 4, 687897, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 2, 1, 4, 687897, tzinfo=datetime.timezone.utc)}
+
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 44, in register
+    POST /api/v1/auth/register
+
+2026-05-12 18:03:05 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:03:34 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 4 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'id'), 'msg': 'Input should be a valid string', 'input': UUID('b2134c12-44da-4f4d-966b-0254dc74d3c4')}
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': UUID('76ff760b-fc35-459a-b508-d9b2a9d9dac7')}
+  {'type': 'string_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 2, 3, 34, 448095, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 2, 3, 34, 448095, tzinfo=datetime.timezone.utc)}
+
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 44, in register
+    POST /api/v1/auth/register
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 695, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 300, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 4 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'id'), 'msg': 'Input should be a valid string', 'input': UUID('b2134c12-44da-4f4d-966b-0254dc74d3c4')}
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': UUID('76ff760b-fc35-459a-b508-d9b2a9d9dac7')}
+  {'type': 'string_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 2, 3, 34, 448095, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 2, 3, 34, 448095, tzinfo=datetime.timezone.utc)}
+
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 44, in register
+    POST /api/v1/auth/register
+
+2026-05-12 18:05:19 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:06:16 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:06:46 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 4 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'id'), 'msg': 'Input should be a valid string', 'input': UUID('304d855f-2f08-4e86-be52-3d8ddb1607fe')}
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': UUID('76ff760b-fc35-459a-b508-d9b2a9d9dac7')}
+  {'type': 'string_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 2, 6, 46, 468971, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 2, 6, 46, 468971, tzinfo=datetime.timezone.utc)}
+
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 44, in register
+    POST /api/v1/auth/register
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 695, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 300, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 4 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'id'), 'msg': 'Input should be a valid string', 'input': UUID('304d855f-2f08-4e86-be52-3d8ddb1607fe')}
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': UUID('76ff760b-fc35-459a-b508-d9b2a9d9dac7')}
+  {'type': 'string_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 2, 6, 46, 468971, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 5, 12, 2, 6, 46, 468971, tzinfo=datetime.timezone.utc)}
+
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 44, in register
+    POST /api/v1/auth/register
+
+2026-05-12 18:11:44 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:12:16 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:13:55 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:14:23 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:14:59 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:21:56 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 404: Not Found  路径: /auth/login
+2026-05-12 18:22:38 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 404: Not Found  路径: /auth/login
+2026-05-12 18:28:52 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-12 18:31:56 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-12 18:32:47 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-12 18:32:48 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-12 18:36:24 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 'Settings' object has no attribute 'ACCESS_TOKEN_EXPIRE_MINUTES'
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 35, in login
+    access_token_expires = timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 1042, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Settings' object has no attribute 'ACCESS_TOKEN_EXPIRE_MINUTES'
+
+2026-05-12 18:39:14 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:39:44 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:40:39 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:41:25 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: Not authenticated  路径: /api/v1/tenants/accessible
+2026-05-12 18:44:51 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/auth/refresh
+2026-05-12 18:45:19 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/tenants/accessible
+2026-05-12 18:49:37 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:50:12 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:50:44 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 'Settings' object has no attribute 'ACCESS_TOKEN_EXPIRE_MINUTES'
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 35, in login
+    access_token_expires = timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 1042, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Settings' object has no attribute 'ACCESS_TOKEN_EXPIRE_MINUTES'
+
+2026-05-12 18:53:24 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:54:13 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-12 18:55:03 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/tenants/accessible

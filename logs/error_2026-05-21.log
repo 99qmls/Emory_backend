@@ -1,0 +1,765 @@
+2026-05-21 00:10:15 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('4f3d878b-d624-4641-aa73-be1550680650'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('4f3d878b-d624-4641-aa73-be1550680650'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 21:43:10 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:01:57 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:02:51 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:02:54 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:04:47 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:12:42 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:21:11 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:28:07 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:36:51 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:40:15 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:41:56 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:43:54 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:47:19 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-21 22:53:38 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+

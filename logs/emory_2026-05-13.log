@@ -1,0 +1,54 @@
+2026-05-13 20:41:28 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-13 21:24:27 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/auth/refresh
+2026-05-13 21:44:30 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-13 21:47:10 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 21:48:51 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-13 21:49:53 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 21:50:04 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 21:50:05 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 21:52:21 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 21:55:52 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-13 21:57:22 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-13 22:00:29 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-13 22:00:29 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:10:31 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-13 22:10:31 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:10:32 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-13 22:10:32 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:10:44 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-13 22:10:44 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:10:55 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-13 22:10:55 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:11:09 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 405: Method Not Allowed  路径: /api/v1/auth/login
+2026-05-13 22:16:02 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:23:05 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:23:17 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:23:18 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 405: Method Not Allowed  路径: /api/v1/auth/login
+2026-05-13 22:36:08 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:36:12 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 405: Method Not Allowed  路径: /api/v1/auth/login
+2026-05-13 22:40:47 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:44:48 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:45:08 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:47:35 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 邮箱或密码错误  路径: /api/v1/auth/login
+2026-05-13 22:52:59 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-13 23:01:42 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-13 23:02:10 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/auth/refresh
+2026-05-13 23:02:45 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-13 23:03:07 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-13 23:03:18 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-13 23:08:37 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/auth/refresh
+2026-05-13 23:09:18 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-13 23:09:28 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: Not authenticated  路径: /api/v1/users/me
+2026-05-13 23:16:15 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/auth/refresh
+2026-05-13 23:19:22 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-13 23:19:28 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-13 23:19:29 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-13 23:19:29 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-13 23:19:39 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-13 23:23:33 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-13 23:24:35 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-13 23:26:46 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-13 23:26:46 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-13 23:27:33 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-13 23:36:20 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-13 23:38:41 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me

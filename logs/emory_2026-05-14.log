@@ -1,0 +1,11 @@
+2026-05-14 09:51:09 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-14 10:07:56 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: Not authenticated  路径: /api/v1/users/me
+2026-05-14 10:17:23 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-14 10:22:16 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-14 10:27:15 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-14 10:31:34 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-14 10:31:35 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-14 10:36:00 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: Not authenticated  路径: /api/v1/users/me
+2026-05-14 10:37:50 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-14 10:45:10 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-14 10:53:25 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个

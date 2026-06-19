@@ -1,0 +1,6 @@
+2026-06-18 17:18:40 | ERROR    | app.services.agent.nodes.generator:generator_node:140 - 生成节点超时
+2026-06-18 17:55:53 | ERROR    | app.services.agent.nodes.supervisor:supervisor_node:102 - Supervisor超时
+2026-06-18 17:56:38 | ERROR    | app.services.agent.nodes.generator:generator_node:141 - 生成节点超时
+2026-06-18 17:57:00 | ERROR    | app.services.agent.nodes.supervisor:supervisor_node:102 - Supervisor超时
+2026-06-18 17:57:45 | ERROR    | app.services.agent.nodes.generator:generator_node:141 - 生成节点超时
+2026-06-18 18:01:12 | ERROR    | app.services.agent.nodes.supervisor:supervisor_node:102 - Supervisor超时

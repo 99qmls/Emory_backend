@@ -1,0 +1,74 @@
+2026-05-15 09:45:35 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-15 10:51:42 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-15 11:18:31 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-15 11:19:03 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-15 11:21:46 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-15 11:21:49 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-15 11:29:06 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-15 11:29:39 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-15 11:32:08 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-15 11:37:20 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/users/me
+2026-05-15 11:40:29 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-15 11:41:20 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-15 11:50:38 | ERROR    | app.core.exceptions:sqlalchemy_exception_handler:65 - 数据库异常: SQL expression for WHERE/HAVING role expected, got <class 'app.models.knowledge_base.KnowledgeBase'>.
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\knowledge.py", line 43, in list_kbs
+    return await knowledge_crud.get_multi_by_tenant(db, tenant_id=tenant_id, skip=skip, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\crud\crud_knowledge.py", line 27, in get_multi_by_tenant
+    return await self.get_multi(db, skip=skip, limit=limit, filters={"tenant_id": tenant_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\crud\base.py", line 35, in get_multi
+    stmt = select(self.model).where(self.model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in where
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\base.py", line 280, in _generative
+    x = fn(self, *args, **kw)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\selectable.py", line 6190, in where
+    where_criteria: ColumnElement[Any] = coercions.expect(
+                                         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\coercions.py", line 395, in expect
+    resolved = impl._literal_coercion(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\coercions.py", line 634, in _literal_coercion
+    self._raise_for_expected(element, argname)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\sqlalchemy\sql\coercions.py", line 518, in _raise_for_expected
+    raise exc.ArgumentError(msg, code=code) from err
+sqlalchemy.exc.ArgumentError: SQL expression for WHERE/HAVING role expected, got <class 'app.models.knowledge_base.KnowledgeBase'>.
+
+2026-05-15 11:54:43 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-15 15:17:39 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-15 16:06:15 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 405: Method Not Allowed  路径: /
+2026-05-15 16:06:47 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-15 16:07:34 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-15 16:07:52 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-15 16:09:15 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-15 16:11:09 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-15 16:11:22 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-15 16:15:34 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-15 16:15:51 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-15 16:19:12 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-15 16:19:30 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-15 16:21:38 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-15 16:22:01 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-15 16:22:17 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-15 16:27:32 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: Not authenticated  路径: /api/v1/auth/refresh
+2026-05-15 16:33:46 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 403: 不能修改自己的角色  路径: /api/v1/users/me
+2026-05-15 16:33:49 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 403: 不能修改自己的角色  路径: /api/v1/users/me
+2026-05-15 16:38:35 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 403: 需要管理员权限  路径: /api/v1/knowledge/
+2026-05-15 16:38:36 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 403: 需要管理员权限  路径: /api/v1/knowledge/
+2026-05-15 16:44:25 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 404: 会话不存在  路径: /api/v1/chat/stream
+2026-05-15 17:01:21 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-15 17:01:59 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个

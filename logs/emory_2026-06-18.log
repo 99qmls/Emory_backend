@@ -1,0 +1,75 @@
+2026-06-18 17:14:06 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-18 17:16:14 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 17:16:19 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:83 - Supervisor原始输出:
+<think>
+好，我现在需要处理用户的请求。用户输入的是“hello”。首先，我要理解
+2026-06-18 17:16:19 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:91 - Supervisor清洗后:
+<think>
+好，我现在需要处理用户的请求。用户输入的是“hello”。首先，我要理解
+2026-06-18 17:16:19 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:109 - 非法路由输出: thinkhello
+2026-06-18 17:16:19 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:46 - 成功加载 generator 提示词模板
+2026-06-18 17:16:19 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-06-18 17:16:19 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 17:17:50 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 17:17:55 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:83 - Supervisor原始输出:
+<think>
+好，我现在需要处理用户的请求：“南阳今天天气如何？”首先，我要理解这个
+2026-06-18 17:17:55 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:91 - Supervisor清洗后:
+<think>
+好，我现在需要处理用户的请求：“南阳今天天气如何？”首先，我要理解这个
+2026-06-18 17:17:55 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:109 - 非法路由输出: think
+2026-06-18 17:17:55 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-06-18 17:17:55 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 17:18:40 | ERROR    | app.services.agent.nodes.generator:generator_node:140 - 生成节点超时
+2026-06-18 17:21:38 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 17:21:44 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:83 - Supervisor原始输出:
+<think>
+好，我现在需要处理用户的请求：“南阳今天天气如何？”首先，我要分析这个
+2026-06-18 17:21:44 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:91 - Supervisor清洗后:
+<think>
+好，我现在需要处理用户的请求：“南阳今天天气如何？”首先，我要分析这个
+2026-06-18 17:21:44 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:109 - 非法路由输出: think
+2026-06-18 17:21:44 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-06-18 17:21:44 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 17:33:33 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-18 17:34:48 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-18 17:39:07 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-18 17:39:54 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-18 17:41:35 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-18 17:43:17 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 17:43:26 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:83 - Supervisor原始输出:
+<think>
+好，我现在需要处理用户的请求：“南阳今天天气如何？”首先，我要理解这个
+2026-06-18 17:43:26 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:91 - Supervisor清洗后:
+<think>
+好，我现在需要处理用户的请求：“南阳今天天气如何？”首先，我要理解这个
+2026-06-18 17:43:26 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:109 - 非法路由输出: think
+2026-06-18 17:43:26 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:46 - 成功加载 generator 提示词模板
+2026-06-18 17:43:26 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 17:51:11 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-18 17:54:33 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-18 17:54:41 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/chat/stream
+2026-06-18 17:55:38 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 17:55:53 | ERROR    | app.services.agent.nodes.supervisor:supervisor_node:102 - Supervisor超时
+2026-06-18 17:55:53 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:46 - 成功加载 generator 提示词模板
+2026-06-18 17:55:53 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 17:56:38 | ERROR    | app.services.agent.nodes.generator:generator_node:141 - 生成节点超时
+2026-06-18 17:56:45 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 17:57:00 | ERROR    | app.services.agent.nodes.supervisor:supervisor_node:102 - Supervisor超时
+2026-06-18 17:57:00 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 17:57:45 | ERROR    | app.services.agent.nodes.generator:generator_node:141 - 生成节点超时
+2026-06-18 18:00:21 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-18 18:00:57 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 18:01:12 | ERROR    | app.services.agent.nodes.supervisor:supervisor_node:102 - Supervisor超时
+2026-06-18 18:01:12 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:46 - 成功加载 generator 提示词模板
+2026-06-18 18:01:12 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 18:04:23 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-18 18:04:52 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-18 18:04:56 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:85 - Supervisor原始输出:
+<think>
+好，我现在需要处理用户的请求：“南阳今天天气如何？”首先，我要理解这个
+2026-06-18 18:04:56 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:89 - Supervisor清洗后:
+
+2026-06-18 18:04:56 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:96 - 非法路由输出: ''，原始: 
+2026-06-18 18:04:56 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:46 - 成功加载 generator 提示词模板
+2026-06-18 18:04:56 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b

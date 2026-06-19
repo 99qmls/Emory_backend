@@ -1,0 +1,49 @@
+2026-05-31 22:05:06 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 22:08:04 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-31 22:08:16 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:64 - Supervisor 原始输出: <think>
+好，我现在需要处理用户的请求：“hello”。首先，我要分析这个请求属于哪个类别。根据决策逻辑，如果用户只是打招呼或者进行非知识性闲聊，应该选择“generator”节点。因此，我应该直接
+2026-05-31 22:08:16 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:87 - 输出非法目标: thinkhellogenerator，回退 generator
+2026-05-31 22:08:16 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:46 - 成功加载 generator 提示词模板
+2026-05-31 22:08:16 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-05-31 22:08:18 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-31 22:13:18 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-31 22:13:27 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:64 - Supervisor 原始输出: <think>
+好，我现在需要处理用户的请求：“今天天气怎么样？”首先，我要分析这个问题属于哪个类别。用户询问的是关于天气的情况，这明显涉及到实时天气信息的查询。根据决策逻辑，当用户明确要求计算或操作
+2026-05-31 22:13:27 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:87 - 输出非法目标: think，回退 generator
+2026-05-31 22:13:27 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-05-31 22:13:29 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-31 22:14:47 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-31 22:14:55 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:64 - Supervisor 原始输出: <think>
+好的，我现在需要处理用户的查询：“南阳今天天气怎么样？”首先，我要分析这个请求的意图。用户询问的是关于南阳地区的天气情况，这明显涉及到实时天气信息，属于事实查证的范畴。
+
+接下来，根据
+2026-05-31 22:14:55 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:87 - 输出非法目标: think，回退 generator
+2026-05-31 22:14:55 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-05-31 22:14:58 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-31 22:18:48 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-31 22:18:57 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:64 - Supervisor 原始输出: <think>
+好的，我现在需要处理用户的请求：“今天被狗狗吓到了，你来安慰我一下”。首先，我要分析这个请求的意图和内容。用户提到被狗狗吓到，并希望得到安慰。这明显是一个情感支持的需求
+2026-05-31 22:18:57 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:87 - 输出非法目标: think，回退 generator
+2026-05-31 22:18:57 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-05-31 22:18:59 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-31 22:19:44 | ERROR    | app.services.agent.nodes.generator:generator_node:140 - 生成节点超时
+2026-05-31 22:20:08 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-31 22:20:16 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:64 - Supervisor 原始输出: <think>
+好，我现在需要处理用户的请求：“今天被狗狗吓到了，你来安慰我一下”。首先，我要分析这个请求属于哪个类别。用户提到被狗狗吓到，并希望得到安慰，这看起来像是闲聊或者情感
+2026-05-31 22:20:16 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:87 - 输出非法目标: think，回退 generator
+2026-05-31 22:20:16 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-05-31 22:20:19 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-31 22:21:04 | ERROR    | app.services.agent.nodes.generator:generator_node:140 - 生成节点超时
+2026-05-31 22:34:29 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 22:44:12 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 22:46:24 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 22:47:04 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 22:49:01 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 22:51:24 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 23:01:48 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 23:06:54 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 23:10:03 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 23:28:33 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 23:34:42 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 23:39:43 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-31 23:42:16 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个

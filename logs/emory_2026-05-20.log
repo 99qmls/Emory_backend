@@ -1,0 +1,262 @@
+2026-05-20 21:43:18 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-20 22:44:56 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: An email address must have an @-sign.', 'input': '', 'ctx': {'reason': 'An email address must have an @-sign.'}}]  路径: /api/v1/auth/login
+2026-05-20 23:29:10 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('b27c2437-8deb-44d3-a4e6-2b7699dbc5da'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('b27c2437-8deb-44d3-a4e6-2b7699dbc5da'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-20 23:31:31 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=user%40test.com&password=user%40test.com'}]  路径: /api/v1/auth/login
+2026-05-20 23:31:31 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 723, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=user%40test.com&password=user%40test.com'}
+
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 45, in login
+    POST /api/v1/auth/login
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\core\exceptions.py", line 53, in validation_exception_handler
+    return JSONResponse(
+           ^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\responses.py", line 195, in render
+    return json.dumps(
+           ^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+
+2026-05-20 23:32:50 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=user%40test.com&password=user%40test.com'}]  路径: /api/v1/auth/login
+2026-05-20 23:32:50 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 723, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=user%40test.com&password=user%40test.com'}
+
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 45, in login
+    POST /api/v1/auth/login
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\core\exceptions.py", line 53, in validation_exception_handler
+    return JSONResponse(
+           ^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\responses.py", line 195, in render
+    return json.dumps(
+           ^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+
+2026-05-20 23:36:53 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-20 23:37:25 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=user%40test.com&password=user%40test.com'}]  路径: /api/v1/auth/login
+2026-05-20 23:37:25 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 723, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'model_attributes_type', 'loc': ('body',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': b'grant_type=password&username=user%40test.com&password=user%40test.com'}
+
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\auth.py", line 45, in login
+    POST /api/v1/auth/login
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\core\exceptions.py", line 53, in validation_exception_handler
+    return JSONResponse(
+           ^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\responses.py", line 195, in render
+    return json.dumps(
+           ^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+
+2026-05-20 23:54:43 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-20 23:55:12 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-20 23:55:54 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-20 23:58:28 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login

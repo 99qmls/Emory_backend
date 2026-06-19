@@ -1,0 +1,320 @@
+2026-05-22 10:22:42 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 10:27:16 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-22 10:27:19 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python.1\Emory_backend\app\api\v1\endpoints\chat.py", line 53, in chat
+    user_msg_in = MessageCreate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for MessageCreate
+conversation_id
+  Input should be a valid string [type=string_type, input_value=UUID('a1b2c3d4-5678-90ab-cdef-1234567890ab'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+
+2026-05-22 10:38:51 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 10:39:53 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 10:52:18 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 11:03:38 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/chat/stream
+2026-05-22 11:08:31 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'query'), 'msg': 'Field required', 'input': {'model': 'deepseek-r1:7b', 'messages': [{'role': 'user', 'content': 'hello'}], 'stream': True, 'conversation_id': 'a1b2c3d4-5678-90ab-cdef-1234567890ab'}}]  路径: /api/v1/chat/stream
+2026-05-22 11:09:35 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 404: 会话不存在  路径: /api/v1/chat/stream
+2026-05-22 15:26:26 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 15:35:33 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'username'), 'msg': 'Field required', 'input': None}, {'type': 'missing', 'loc': ('body', 'password'), 'msg': 'Field required', 'input': None}]  路径: /api/v1/auth/login
+2026-05-22 15:58:23 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:05:57 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:06:26 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:07:45 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:08:26 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/chat/stream
+2026-05-22 16:08:36 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/chat/stream
+2026-05-22 16:14:34 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:19:37 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:22:27 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:25:41 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:29:33 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:33:41 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:36:44 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:37:15 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:38:54 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:42:18 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:42:20 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/chat/stream
+2026-05-22 16:42:25 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/chat/stream
+2026-05-22 16:43:12 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:43:29 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/chat/stream
+2026-05-22 16:45:56 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 16:45:56 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:58 - 输出非法目标: ollamakeyerrorhttplocalhost ,回退generator
+2026-05-22 16:45:56 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:50 - 成功加载 generator 提示词模板
+2026-05-22 16:45:56 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 16:45:56 | ERROR    | app.services.agent.nodes.generator:execute:150 - LLM生成失败 | 回退到安全响应
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 320
+               │     └ 3
+               └ <function _main at 0x00000218B28EA3E0>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 320
+           │    └ <function BaseProcess._bootstrap at 0x00000218B265FBA0>
+           └ <SpawnProcess name='SpawnProcess-1' parent=25900 started>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x00000218B265F100>
+    └ <SpawnProcess name='SpawnProcess-1' parent=25900 started>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x00000218B28BCE10>, 'target': <bound method Server.run of <uvicorn.server.Server...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=25900 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=25900 started>
+    │    └ <function subprocess_started at 0x00000218B4D1D440>
+    └ <SpawnProcess name='SpawnProcess-1' parent=25900 started>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=716, family=2, type=1, proto=6, laddr=('127.0.0.1', 7000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x00000218B4E9AFD0>>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=716, family=2, type=1, proto=6, laddr=('127.0.0.1', 7000)>]
+           │       │   │    └ <function Server.serve at 0x00000218B4D1C0E0>
+           │       │   └ <uvicorn.server.Server object at 0x00000218B4E9AFD0>
+           │       └ <function run at 0x00000218B2EE6840>
+           └ <module 'asyncio' from 'C:\\Users\\86182\\.conda\\envs\\Emory_backend\\Lib\\asyncio\\__init__.py'>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x00000218B4E68F40>
+           │      └ <function Runner.run at 0x00000218B4581260>
+           └ <asyncio.runners.Runner object at 0x00000218B4E9A9D0>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\uvicor...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x00000218B457AE80>
+           │    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x00000218B4E9A9D0>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x00000218B457ADE0>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x00000218B4580C20>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x00000218B2EE7060>
+    └ <Handle <TaskStepMethWrapper object at 0x00000218F8F37FA0>()>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x00000218F8F37FA0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x00000218F8F37FA0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x00000218F8F37FA0>()>
+
+> File "C:\python.1\Emory_backend\app\services\agent\nodes\generator.py", line 138, in execute
+    response = await get_llm().generate(
+                     └ <function get_llm at 0x00000218F8791580>
+
+TypeError: BaseLLM.generate() got an unexpected keyword argument 'timeout'
+2026-05-22 16:46:24 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 16:46:24 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:58 - 输出非法目标: ollamakeyerrorhttplocalhost ,回退generator
+2026-05-22 16:46:24 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 16:46:24 | ERROR    | app.services.agent.nodes.generator:execute:150 - LLM生成失败 | 回退到安全响应
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 320
+               │     └ 3
+               └ <function _main at 0x00000218B28EA3E0>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 320
+           │    └ <function BaseProcess._bootstrap at 0x00000218B265FBA0>
+           └ <SpawnProcess name='SpawnProcess-1' parent=25900 started>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x00000218B265F100>
+    └ <SpawnProcess name='SpawnProcess-1' parent=25900 started>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x00000218B28BCE10>, 'target': <bound method Server.run of <uvicorn.server.Server...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=25900 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=25900 started>
+    │    └ <function subprocess_started at 0x00000218B4D1D440>
+    └ <SpawnProcess name='SpawnProcess-1' parent=25900 started>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=716, family=2, type=1, proto=6, laddr=('127.0.0.1', 7000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x00000218B4E9AFD0>>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=716, family=2, type=1, proto=6, laddr=('127.0.0.1', 7000)>]
+           │       │   │    └ <function Server.serve at 0x00000218B4D1C0E0>
+           │       │   └ <uvicorn.server.Server object at 0x00000218B4E9AFD0>
+           │       └ <function run at 0x00000218B2EE6840>
+           └ <module 'asyncio' from 'C:\\Users\\86182\\.conda\\envs\\Emory_backend\\Lib\\asyncio\\__init__.py'>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x00000218B4E68F40>
+           │      └ <function Runner.run at 0x00000218B4581260>
+           └ <asyncio.runners.Runner object at 0x00000218B4E9A9D0>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Users\86182\.conda\envs\Emory_backend\Lib\site-packages\uvicor...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x00000218B457AE80>
+           │    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x00000218B4E9A9D0>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x00000218B457ADE0>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x00000218B4580C20>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x00000218B2EE7060>
+    └ <Handle <TaskStepMethWrapper object at 0x00000218F8E0C700>()>
+  File "C:\Users\86182\.conda\envs\Emory_backend\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x00000218F8E0C700>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x00000218F8E0C700>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x00000218F8E0C700>()>
+
+> File "C:\python.1\Emory_backend\app\services\agent\nodes\generator.py", line 138, in execute
+    response = await get_llm().generate(
+                     └ <function get_llm at 0x00000218F8791580>
+
+TypeError: BaseLLM.generate() got an unexpected keyword argument 'timeout'
+2026-05-22 16:52:45 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:53:18 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 16:53:19 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:66 - 输出非法目标: ollamakeyerrorhttplocalhost，回退 generator
+2026-05-22 16:53:19 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:49 - 成功加载 generator 提示词模板
+2026-05-22 16:53:19 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 16:58:31 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 16:59:07 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 16:59:12 | ERROR    | app.services.agent.nodes.supervisor:supervisor_node:69 - Supervisor 调用超时，回退到 generator
+2026-05-22 16:59:12 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:49 - 成功加载 generator 提示词模板
+2026-05-22 16:59:15 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 16:59:28 | ERROR    | app.services.agent.nodes.generator:generator_node:170 - 生成器节点整体超时
+2026-05-22 17:02:00 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 17:03:17 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 17:03:46 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 17:03:46 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:66 - 输出非法目标: ollamatypeerrorasyncforrequiresanobjectwithaitermethodgotcoroutine，回退 generator
+2026-05-22 17:03:46 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:49 - 成功加载 generator 提示词模板
+2026-05-22 17:03:46 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 17:06:42 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 17:07:11 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 17:07:17 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:66 - 输出非法目标: think，回退 generator
+2026-05-22 17:07:17 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:49 - 成功加载 generator 提示词模板
+2026-05-22 17:07:19 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 17:13:04 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 17:16:00 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 17:16:50 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-05-22 17:17:01 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/chat/stream
+2026-05-22 17:18:09 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 17:18:15 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:66 - 输出非法目标: think，回退 generator
+2026-05-22 17:18:15 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:49 - 成功加载 generator 提示词模板
+2026-05-22 17:18:17 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 17:28:53 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 17:28:59 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:66 - 输出非法目标: think，回退 generator
+2026-05-22 17:29:01 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-05-22 17:48:31 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个

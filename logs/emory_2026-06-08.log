@@ -1,0 +1,338 @@
+2026-06-08 19:15:53 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 19:34:30 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 19:55:22 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 21:27:23 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 21:31:51 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 21:37:30 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 22:28:22 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 22:35:03 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 22:35:16 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:64 - Supervisor 原始输出: <think>
+好，我现在需要处理用户的请求：“hello”。首先，我要分析这个请求的目的。用户只是说了一个“你好”，这看起来像是一个问候语，没有明确的需求或任务。
+
+根据决策逻辑，如果用户的问题模糊或者只是
+2026-06-08 22:35:16 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:87 - 输出非法目标: thinkhello，回退 generator
+2026-06-08 22:35:16 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:46 - 成功加载 generator 提示词模板
+2026-06-08 22:35:16 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-06-08 22:35:16 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 22:36:49 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 22:36:58 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:64 - Supervisor 原始输出: <think>
+好的，我现在需要处理用户的请求：“南阳天气如何？”首先，我要分析这个问题属于哪个类别。用户询问的是关于南阳的天气情况，这明显涉及到实时天气查询的需求。根据决策逻辑，当用户明确要求计算或
+2026-06-08 22:36:58 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:87 - 输出非法目标: think，回退 generator
+2026-06-08 22:36:58 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-06-08 22:36:58 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 22:51:28 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 22:52:23 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 23:01:59 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 23:02:39 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 23:03:18 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 23:04:02 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 23:06:27 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 23:10:48 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 23:11:30 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 401: 无法验证凭证  路径: /api/v1/chat/stream
+2026-06-08 23:12:55 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 23:13:02 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:83 - Supervisor原始输出:
+<think>
+好，我现在需要判断用户的请求应该交给哪个节点处理。首先，我得仔细
+2026-06-08 23:13:02 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:91 - Supervisor清洗后:
+<think>
+好，我现在需要判断用户的请求应该交给哪个节点处理。首先，我得仔细
+2026-06-08 23:13:02 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:109 - 非法路由输出: think
+2026-06-08 23:13:02 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:46 - 成功加载 generator 提示词模板
+2026-06-08 23:13:02 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-06-08 23:13:02 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 23:14:27 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 23:14:31 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:83 - Supervisor原始输出:
+<think>
+好，我现在需要处理用户的请求：“南阳卧龙区今天天气如何？告诉我具体
+2026-06-08 23:14:31 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:91 - Supervisor清洗后:
+<think>
+好，我现在需要处理用户的请求：“南阳卧龙区今天天气如何？告诉我具体
+2026-06-08 23:14:31 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:109 - 非法路由输出: think
+2026-06-08 23:14:31 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-06-08 23:14:31 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 23:17:58 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 2 validation errors:
+  {'type': 'string_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 0, 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+
+Traceback (most recent call last):
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 177, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 2 validation errors:
+  {'type': 'string_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 0, 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+
+
+2026-06-08 23:18:30 | WARNING  | app.core.exceptions:validation_exception_handler:52 - 请求验证失败: [{'type': 'missing', 'loc': ('body', 'config'), 'msg': 'Field required', 'input': {'query': '今天天气如何', 'kb_id': None, 'conversation_id': None, 'model': None}}]  路径: /api/v1/chat/stream
+2026-06-08 23:24:24 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 2 validation errors:
+  {'type': 'string_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 0, 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+
+Traceback (most recent call last):
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 177, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 2 validation errors:
+  {'type': 'string_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 0, 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+
+
+2026-06-08 23:24:29 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 2 validation errors:
+  {'type': 'string_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 0, 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+
+Traceback (most recent call last):
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 177, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 2 validation errors:
+  {'type': 'string_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 0, 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+
+
+2026-06-08 23:24:30 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 2 validation errors:
+  {'type': 'string_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 0, 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+
+Traceback (most recent call last):
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 177, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 2 validation errors:
+  {'type': 'string_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 0, 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+
+
+2026-06-08 23:24:33 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 2 validation errors:
+  {'type': 'string_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 0, 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+
+Traceback (most recent call last):
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 177, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 2 validation errors:
+  {'type': 'string_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 0, 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+
+
+2026-06-08 23:24:40 | CRITICAL | app.core.exceptions:unhandled_exception_handler:73 - 未处理异常: 2 validation errors:
+  {'type': 'string_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 0, 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+
+Traceback (most recent call last):
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 328, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\c++\anaconda\envs\Emory_backend\Lib\site-packages\fastapi\routing.py", line 177, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 2 validation errors:
+  {'type': 'string_type', 'loc': ('response', 0, 'created_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+  {'type': 'string_type', 'loc': ('response', 0, 'updated_at'), 'msg': 'Input should be a valid string', 'input': datetime.datetime(2026, 4, 23, 13, 33, 17, 888070, tzinfo=datetime.timezone.utc)}
+
+
+2026-06-08 23:25:06 | WARNING  | app.core.exceptions:http_exception_handler:47 - HTTP异常 404: 会话不存在  路径: /api/v1/chat/stream
+2026-06-08 23:27:31 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 23:28:13 | INFO     | app.services.agent.nodes.emotion:_load_valid_emotions:29 - 从 emotion.txt 加载情感标签 29 个
+2026-06-08 23:33:13 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 23:33:26 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:83 - Supervisor原始输出:
+<think>
+好，我现在需要处理用户的请求：“今天天气如何”。首先，我要理解这个请求
+2026-06-08 23:33:26 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:91 - Supervisor清洗后:
+<think>
+好，我现在需要处理用户的请求：“今天天气如何”。首先，我要理解这个请求
+2026-06-08 23:33:26 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:109 - 非法路由输出: think
+2026-06-08 23:33:26 | INFO     | app.services.agent.nodes.generator:_load_prompt_template:46 - 成功加载 generator 提示词模板
+2026-06-08 23:33:26 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-06-08 23:33:26 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 23:34:53 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 23:34:57 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:83 - Supervisor原始输出:
+<think>
+好，我现在需要处理用户的请求：“南阳卧龙区今天天气如何？告诉我具体
+2026-06-08 23:34:57 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:91 - Supervisor清洗后:
+<think>
+好，我现在需要处理用户的请求：“南阳卧龙区今天天气如何？告诉我具体
+2026-06-08 23:34:57 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:109 - 非法路由输出: think
+2026-06-08 23:34:57 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-06-08 23:34:57 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 23:35:42 | ERROR    | app.services.agent.nodes.generator:generator_node:140 - 生成节点超时
+2026-06-08 23:36:14 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 23:36:18 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:83 - Supervisor原始输出:
+<think>
+好，我现在需要判断用户的请求应该交给哪个节点处理。首先，我仔细阅读
+2026-06-08 23:36:18 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:91 - Supervisor清洗后:
+<think>
+好，我现在需要判断用户的请求应该交给哪个节点处理。首先，我仔细阅读
+2026-06-08 23:36:18 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:109 - 非法路由输出: think
+2026-06-08 23:36:18 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-06-08 23:36:18 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 23:37:25 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
+2026-06-08 23:37:29 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:83 - Supervisor原始输出:
+<think>
+好，我现在需要处理用户的请求：“南阳卧龙区今天天气如何？告诉我具体
+2026-06-08 23:37:29 | INFO     | app.services.agent.nodes.supervisor:supervisor_node:91 - Supervisor清洗后:
+<think>
+好，我现在需要处理用户的请求：“南阳卧龙区今天天气如何？告诉我具体
+2026-06-08 23:37:29 | WARNING  | app.services.agent.nodes.supervisor:supervisor_node:109 - 非法路由输出: think
+2026-06-08 23:37:29 | WARNING  | app.services.agent.nodes.generator:generator_node:122 - 提示词变量缺失: 'tool_result'，使用默认模板
+2026-06-08 23:37:29 | INFO     | app.services.llm.factory:get_llm:41 - 选择本地模型: deepseek-r1:7b
