@@ -393,14 +393,14 @@ LLM Summary
 
 ---
 # 快速开始
-1.激活docker
-2.大模型启动（这里可以使用其它本地部署大模型，或者优先云大模型，可以修改模型和策略）
-ollama run deepseek-r1:7b
-3. docker-compose up -d （这里采用docker部署数据库，后面可以用k8s）
-4. python servers/weather_server.py 先启动mcp服务再启动主服务
-5. uvicorn app.main:app --reload --port 7000
-6. celery -A app.core.celery_app worker --loglevel=info
-可视化接口网址（端口可以自定义修改）
-http://127.0.0.1:7000/docs#/
-登录 pgAdmin （可视化数据库）
-浏览器打开：http://localhost:5050
+*1.激活docker
+*2.大模型启动（这里可以使用其它本地部署大模型，或者优先云大模型，可以修改模型和策略）
+*ollama run deepseek-r1:7b
+*3. docker-compose up -d （这里采用docker部署数据库，后面可以用k8s）
+*4. python servers/weather_server.py 先启动mcp服务再启动主服务
+*5. uvicorn app.main:app --reload --port 7000
+*6. celery -A app.core.celery_app worker --loglevel=info
+*可视化接口网址（端口可以自定义修改）
+*http://127.0.0.1:7000/docs#/
+*登录 pgAdmin （可视化数据库）
+*浏览器打开：http://localhost:5050
